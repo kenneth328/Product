@@ -1,0 +1,144 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<body>
+    <title>Adidas</title>
+	<div id="wrapper">
+		<header id="header">
+			<a href="">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" id="header-img" alt="Adidas_Logo">
+			</a>
+			<nav id="nav-bar">
+				<ul>
+					<li><a class="nav-link" href="#features">Features</a></li>
+					<li><a class="nav-link" href="#pricing">Pricing</a></li>
+					<li><a class="nav-link" href="#about">About</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<header id="header-mobile">
+			<div id="header-nav">
+				<a href="">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" id="header-img" alt="Adidas_Logo">
+				</a>
+				<a href="javascript:void(0);" id="hamburger-menu" onclick="mobileMenuOpen()">
+					<i class="fas fa-bars"></i>
+				</a>
+			</div>
+			<nav id="mobile-nav">
+				<ul>
+					<li><a class="nav-link" href="#features">Features</a></li>
+					<li><a class="nav-link" href="#pricing">Pricing</a></li>
+					<li><a class="nav-link" href="#about">About</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<div class="container">
+			<section id="banner">
+				<div id="banner-container">
+					<img id="img-banner" src="https://images.unsplash.com/photo-1518002171953-a080ee817e1f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1376&q=80">
+				</div>
+			</section>
+			<section id="hero">
+				<div id="hero-container">
+					<h2>Ready for Sport.</h2>
+					<form id="form" action="https://www.freecodecamp.com/email-submit">
+						<input type="email" name="email" id="email" placeholder="input your email here">
+						<input type="submit" id="submit" value="Get Started" class="button">
+					</form>	
+				</div>			
+			</section>
+			
+			<div class="container">
+				<section id="features">
+					<h1 class="section-header">Features.</h1>
+					<div class="grid">
+						<div class="icon"><i class="fas fa-3x fa-fire"></i></div>
+						<div class="desc">
+							<h2>Premium Materials</h2>
+							<p>Our Product use premium materials.</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="icon"><i class="fas fa-3x fa-shipping-fast fa-flip-horizontal"></i></div>
+						<div class="desc">
+							<h2>Fast Shipping</h2>
+							<p>We Make sure you receive Our product as soon as you order it. We also provide free returns if you are not satisfied.</p>
+						</div>
+					</div>
+					<div class="grid">
+						<div class="icon"><i class="fas fa-3x fa-check-circle"></i></div>
+						<div class="desc">
+							<h2>Quality Assurance</h2>
+							<p>For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+						</div>
+				</section>
+				<section id="video-product">
+					<h1 class="section-header">Video Product.</h1>
+					<iframe id="video" src="https://www.youtube.com/embed/V_ozu_7Xweg" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+				</section>
+				<section id="pricing">
+					<h1 class="section-header">Pricing.</h1>
+					<div id="pricing-container">
+						<div class="product" id="ultraboost-dna">
+							<div class="label">
+								<h3>Ultraboost Dna Shoes</h3>
+							</div>
+							<div class="product-desc">
+								<h2>$200</h2>
+								<ol>
+									
+								</ol>
+								<button class="button">order</button>
+							</div>
+						</div>
+						<div class="product" id="stan-smith">
+							<div class="label">
+								<h3>EQT Support</h3>
+							</div>
+							<div class="product-desc">
+								<h2>$80</h2>
+								<ol>
+									
+									<button class="button">order</button>
+								</ol>
+							</div>
+						</div>
+						<div class="product" id="supercourt-smith">
+							<div class="label">
+								<h3>Harden Stepback</h3>
+							</div>
+							<div class="product-desc">
+								<h2>$90</h2>
+								<ol>
+									
+									<button class="button">order</button>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="about">
+					<h1 class="section-header">About Us.</h1>
+					<div id="about-container">
+						<h2>adidas at a glance</h2>
+						<p>Adidas has its roots in Germany but we are a truly global company. Around the world we employ over 59,000 people. Employees from about 100 nations are working at our global HQ in Herzogenaurach, Germany – the ‘World of Sports’. In 2019 we produced over 1.1 billion sports and sports lifestyle products with independent manufacturing partners worldwide and generated sales of € 23.640 billion. These numbers alone can easily suggest that adidas is quite a large and also multifaceted organization. True. But we keep things simple, lean and fast. And we will use this approach now to give an overview of what our company is all about.</p>
+					</div>
+				</section>
+			</div>
+		</div>
+		
+	</div>
+</body>
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script type="text/javascript">
+	function mobileMenuOpen(){
+		var x = document.getElementById("mobile-nav");
+		if (x.style.display === "block") {
+			x.style.display = "none";
+		}
+		else{
+			x.style.display = "block"
+		}
+	}
+</script>
